@@ -12,8 +12,19 @@
 	.styles{
 	display:inline-flex;
 	padding:3%;
+	
 	}
 	.aesthetics{
+	background-color:white;
+	text-align:center;
+	margin:5px;
+  padding:10px;
+}
+.styles1{
+	display:inline-flex;
+	padding:3%;
+	}
+	.aesthetics1{
 	background-color:white;
 	text-align:center;
 	margin:5px;
@@ -27,7 +38,6 @@
  padding: 20px;
  }
  .about{
-  height:300px;
  background-color:white;
  
  }
@@ -40,6 +50,7 @@
  }
  .para{
  width:600px;
+ padding:2%;
  text-align:center;
  background-color:#EEEDE7;
  }
@@ -75,9 +86,66 @@ background-color:#EEEDE7;
   margin-right: auto;
   width:20%;
 }
+div.gallery {
+  border: 2px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid black;
+  font-size:20px;
+}
+
+div.gallery img {
+  width: 100%;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.progress1{
+height:350px;
+background-color:#EEEDE7;
+padding:2%;
+ margin:2%;
+ text-align:center;
+}
+.fashion{
+text-align:left;
+}
+
 	</style>
 </head>
 <body>
+<div class="fixed-top">
   <nav class="navbar1">
     <div class="container-fluid1">
       <i class="fa-solid fa-location-dot"></i>&nbsp WEST 21ST STREET, SOHO, NY &nbsp&nbsp 
@@ -92,8 +160,18 @@ background-color:#EEEDE7;
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Lifestyle</a>
+       <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Lifestyle
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Portfolio</a></li>
+            <li><a class="dropdown-item" href="#">Blog</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Pinterest</a></li>
+			<li><a class="dropdown-item" href="#">Modelling Agency</a></li>
+			<li><a class="dropdown-item" href="#">FAQ & Help</a></li>
+          </ul>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -123,12 +201,12 @@ background-color:#EEEDE7;
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-dark" type="submit">Search for serum?</button>
+        <button class="btn btn-outline-dark" type="submit">Search for pinterest?</button>
       </form>
     </div>
   </div>
 </nav>
-    
+  </div> 
     <div class="row">
         
          
@@ -190,7 +268,6 @@ Our Revolutionary Products Are Crafted With Utmost Care And Love For You. To liv
 </div>
 <div class="about">
 <div class="content">
-  <img src="C:\Users\DT017\Desktop\chandini\images\WhatsApp Image 2024-07-14 at 11.55.50 PM.jpeg" alt="fashion" class="center" height="300px"/>
 <div class="para">
  <h1>About Us & Our Work</h1>
  <P>Fruits Made Clinically Effective
@@ -201,6 +278,86 @@ At Flora & khloe, we believe skincare should be effortlessly effective & deliver
 </div>
  </div>
  </div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_5terre.jpg">
+      <img src="C:\Users\DT017\Desktop\chandini\images\WhatsApp Image 2024-07-18 at 7.08.58 PM.jpeg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Fashion/love & life</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="C:\Users\DT017\Desktop\chandini\images\WhatsApp Image 2024-07-18 at 7.09.01 PM (1).jpeg" alt="fashion" width="600" height="400">
+    </a>
+    <div class="desc">Glitter Paparazzi</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="C:\Users\DT017\Desktop\chandini\images\WhatsApp Image 2024-07-18 at 7.09.01 PM.jpeg" alt="Style" width="600" height="400">
+    </a>
+    <div class="desc">Art/Trends</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="C:\Users\DT017\Desktop\chandini\images\WhatsApp Image 2024-07-18 at 7.09.00 PM (1).jpeg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Beauty/makeup</div>
+  </div>
+</div>
+		<div class="styles1">
+ <div class="aesthetics1">
+ <h1>GREAT ON ALL DEVICES</h1>
+  <p>
+  Crafting a website that is adaptable is key. This ensures that it looks great across all devices, rather than simply having a web design which shrinks to fit a mobile screen.</p>
+  </div>
+
+<div class="aesthetics1">
+ <h1>SHOWCASE YOUR CLIENTS</h1>
+  <p>
+Crafting a website that is adaptable is key. This ensures that it looks great across all devices, rather than simply having a web design which shrinks to fit a mobile screen.
+</p>
+</div>
+
+<div class="aesthetics1">
+ <h1>IMPORT WITH ONE CLICK</h1>
+ 
+  <p>
+Crafting a website that is adaptable is key. This ensures that it looks great across all devices, rather than simply having a web design which shrinks to fit a mobile screen.
+</p>
+</div>
+</div>
+<div class="progress1">
+<h1>Our Skills & Expertise</h1>
+</br></br>
+<div class="fashion">
+<h1>Fashion</h1>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated bg-black" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+</div></br>
+<div class="fashion">
+<h1>Modelling</h1>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated bg-black" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+</div></br>
+<div class="fashion">
+<h1>Skincare</h1>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated bg-black" role="progressbar" style="width: 75%" aria-valuenow="75%" aria-valuemin="0" aria-valuemax="100">75</div>
+</div></br></br>
+</div>
  <div class="Us">
 <div class="contact">
  <h1>Get to know us</h1>
@@ -226,6 +383,7 @@ At Flora & khloe, we believe skincare should be effortlessly effective & deliver
   <a href="#"><i class="fa-brands fa-twitter"></i></a>
    
 </div>
+
 <div class="contact">
 <h1>STAY UPDATED!</h1>
 <form class="d-flex" role="search">
